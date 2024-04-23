@@ -1,6 +1,7 @@
 import Image from 'next/image'; 
 import Link from 'next/link'; 
 import styles from './navbar.module.css'
+import { SignInButton, SignOutButton } from '@/components/buttons';
 
 
 export default function Navbar(){
@@ -26,6 +27,12 @@ export default function Navbar(){
                     <Link href={'/blog'}>Blog</Link></li>
                 <li>
                     <Link href={'/users'}>Users</Link>
+                </li>
+                <li> 
+                    <SignInButton /> 
+                </li>
+                <li> 
+                    <SignOutButton /> 
                 </li>
             </ul>  
         </nav>
